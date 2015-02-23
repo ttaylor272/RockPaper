@@ -1,0 +1,15 @@
+<div class='game-result'>
+	<div>
+		Your throw: <span class='sign-label-<%= @user_throw %>'> <%= @user_throw %> </span>
+	</div>
+
+	<div>
+		Server throw: <span class='sign-label-<%= @server_throw %>'><%= @server_throw %> </span>
+	</div>
+
+	<div>
+		Result: You <%= @result %>!
+	</div>
+
+	<%= link_to('New Game', :game_index) %>
+</div>

@@ -1,0 +1,5 @@
+<%= form_tag(throw_path, :method => 'post', :class => 'sign-select') do %>
+  <%= label_tag('throw') %>
+  <%= select('', :sign, @signs, include_blank: false) %>
+  <%= submit_tag('Shoot!', :name => nil) %> <!-- Don't need to pass the commit param -->
+<% end %>
